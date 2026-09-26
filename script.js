@@ -1,3 +1,7 @@
+// =====================================================
+// MOBILE NAVIGATION
+// =====================================================
+
 function toggleMenu() {
 const nav = document.getElementById("navMenu");
 
@@ -9,12 +13,14 @@ if (nav) {
 
 }
 
-// Close mobile menu when a navigation link is clicked
+// =====================================================
+// CLOSE MOBILE MENU AFTER CLICKING A LINK
+// =====================================================
 
-document.querySelectorAll("#navMenu a").forEach(function(link) {
+document.querySelectorAll("#navMenu a").forEach(function (link) {
 
 ```
-link.addEventListener("click", function() {
+link.addEventListener("click", function () {
 
     const nav = document.getElementById("navMenu");
 
@@ -27,9 +33,11 @@ link.addEventListener("click", function() {
 
 });
 
-// Close mobile menu when clicking outside the navigation
+// =====================================================
+// CLOSE MENU WHEN CLICKING OUTSIDE
+// =====================================================
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
 
 ```
 const nav = document.getElementById("navMenu");
@@ -50,18 +58,20 @@ if (
 
 });
 
-// Add a small shadow effect to the header while scrolling
+// =====================================================
+// HEADER SCROLL EFFECT
+// =====================================================
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
 
 ```
-const header = document.getElementById("header");
+const header = document.querySelector(".header");
 
 if (!header) {
     return;
 }
 
-if (window.scrollY > 20) {
+if (window.scrollY > 30) {
     header.classList.add("scrolled");
 } else {
     header.classList.remove("scrolled");
@@ -69,3 +79,46 @@ if (window.scrollY > 20) {
 ```
 
 });
+
+// =====================================================
+// SMOOTH SCROLL
+// =====================================================
+
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+
+```
+link.addEventListener("click", function (event) {
+
+    const targetId = this.getAttribute("href");
+
+    if (!targetId || targetId === "#") {
+        return;
+    }
+
+    const target = document.querySelector(targetId);
+
+    if (target) {
+
+        event.preventDefault();
+
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+});
+```
+
+});
+
+// =====================================================
+// CURRENT YEAR
+// =====================================================
+
+const yearElement = document.querySelector(".copyright-year");
+
+if (yearElement) {
+yearElement.textContent = new Date().getFullYear();
+}
