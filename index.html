@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
-<title>Myzas Technologies Private Limited | Technology Solutions</title>
+<title>Myzas Technologies Private Limited | Technology & IT Solutions</title>
 
 <meta name="description"
-      content="Myzas Technologies provides software development, software testing, cloud computing, mobile applications, IT staff augmentation and technology services.">
+      content="Myzas Technologies Private Limited provides software development, cloud computing, software testing, mobile applications, IT staff augmentation and technology solutions.">
 
-<meta name="theme-color" content="#071a35">
+<meta name="keywords"
+      content="Myzas Technologies, software development, IT services, software testing, cloud computing, mobile application, IT staff augmentation, Clinical SAS">
+
+<meta name="author" content="Myzas Technologies Private Limited">
+
+<link rel="icon" type="image/png" href="images/logo.png">
 
 <link rel="stylesheet" href="style.css">
 ```
@@ -20,7 +25,9 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
 <header class="header" id="header">
 
@@ -28,23 +35,30 @@
 <div class="container nav">
 
     <a href="#home" class="logo">
-        <span class="logo-main">MYZAS</span>
-        <span class="logo-sub">TECHNOLOGIES</span>
+        <img src="images/logo.png" alt="Myzas Technologies Private Limited">
     </a>
 
-    <button class="menu-btn"
-            onclick="toggleMenu()"
-            aria-label="Open navigation menu">
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
         ☰
     </button>
 
-    <nav id="navMenu">
+    <nav class="nav-menu" id="navMenu">
 
         <a href="#home">Home</a>
-        <a href="#about">About Us</a>
+
+        <a href="#about">About</a>
+
         <a href="#services">Services</a>
+
         <a href="#technologies">Technologies</a>
+
         <a href="#healthcare">Healthcare</a>
+
         <a href="#contact">Contact</a>
 
     </nav>
@@ -54,43 +68,46 @@
 
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-<section id="home" class="hero">
+<main>
+
+<section class="hero" id="home">
 
 ```
-<div class="hero-glow glow-one"></div>
-<div class="hero-glow glow-two"></div>
+<div class="hero-background"></div>
 
 <div class="container hero-content">
 
     <div class="hero-text">
 
-        <div class="hero-label">
-            <span class="label-dot"></span>
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
             MYZAS TECHNOLOGIES PRIVATE LIMITED
         </div>
 
         <h1>
-            Building Technology
-            <span>That Moves Business Forward.</span>
+            Building Digital
+            <span>Solutions That Matter.</span>
         </h1>
 
         <p class="hero-description">
-            We create scalable software products, digital solutions
-            and technology services that help businesses operate
-            smarter, move faster and grow with confidence.
+            We help businesses transform ideas into reliable,
+            scalable and modern technology solutions through
+            software development, cloud, testing and IT expertise.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#services" class="btn primary">
+            <a href="#services" class="btn btn-primary">
                 Explore Our Services
                 <span>→</span>
             </a>
 
-            <a href="#contact" class="btn outline">
-                Let's Talk
+            <a href="#contact" class="btn btn-outline">
+                Talk to Our Team
             </a>
 
         </div>
@@ -98,22 +115,22 @@
         <div class="hero-trust">
 
             <div class="trust-item">
-                <strong>150+</strong>
-                <span>Projects</span>
+                <strong>Technology</strong>
+                <span>Driven Solutions</span>
             </div>
 
             <div class="trust-line"></div>
 
             <div class="trust-item">
-                <strong>50+</strong>
-                <span>Experts</span>
+                <strong>Business</strong>
+                <span>Focused Approach</span>
             </div>
 
             <div class="trust-line"></div>
 
             <div class="trust-item">
-                <strong>90+</strong>
-                <span>Customers</span>
+                <strong>Quality</strong>
+                <span>First Mindset</span>
             </div>
 
         </div>
@@ -123,42 +140,41 @@
 
     <div class="hero-visual">
 
-        <div class="visual-card main-card">
+        <div class="visual-glow"></div>
+
+        <div class="technology-card main-card">
 
             <div class="card-top">
 
-                <div class="window-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="card-icon">
+                    <span>&lt;/&gt;</span>
                 </div>
 
-                <div class="status">
-                    <span></span>
-                    Solutions
-                </div>
+                <span class="card-status">
+                    ● Solutions
+                </span>
 
             </div>
 
-            <div class="visual-icon">
-                &lt;/&gt;
-            </div>
-
-            <h3>Digital Engineering</h3>
+            <h3>
+                Software
+                <span>Development</span>
+            </h3>
 
             <p>
-                Scalable technology solutions designed
-                around your business requirements.
+                Scalable digital products and customized
+                software solutions designed around your
+                business requirements.
             </p>
 
-            <div class="progress-area">
+            <div class="card-progress">
 
                 <div class="progress-label">
                     <span>Innovation</span>
-                    <strong>92%</strong>
+                    <span>100%</span>
                 </div>
 
-                <div class="progress">
+                <div class="progress-bar">
                     <span></span>
                 </div>
 
@@ -169,11 +185,11 @@
 
         <div class="floating-card floating-one">
 
-            <div class="floating-icon blue">☁</div>
+            <span class="floating-icon">☁</span>
 
             <div>
                 <strong>Cloud</strong>
-                <span>Technology</span>
+                <small>Technology</small>
             </div>
 
         </div>
@@ -181,11 +197,11 @@
 
         <div class="floating-card floating-two">
 
-            <div class="floating-icon purple">✓</div>
+            <span class="floating-icon">✓</span>
 
             <div>
                 <strong>Quality</strong>
-                <span>Assurance</span>
+                <small>Assurance</small>
             </div>
 
         </div>
@@ -193,42 +209,68 @@
     </div>
 
 </div>
+```
 
-<div class="hero-bottom">
-    <div class="container">
-        <span>SOFTWARE</span>
-        <span>•</span>
-        <span>CLOUD</span>
-        <span>•</span>
-        <span>HEALTHCARE</span>
-        <span>•</span>
-        <span>IT SERVICES</span>
+</section>
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats-section">
+
+```
+<div class="container stats-grid">
+
+    <div class="stat-item">
+        <strong>150+</strong>
+        <span>Projects Completed</span>
     </div>
+
+    <div class="stat-item">
+        <strong>50+</strong>
+        <span>Technology Experts</span>
+    </div>
+
+    <div class="stat-item">
+        <strong>90+</strong>
+        <span>Customers</span>
+    </div>
+
+    <div class="stat-item">
+        <strong>20+</strong>
+        <span>Industry Recognitions</span>
+    </div>
+
 </div>
 ```
 
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================================================
+     ABOUT
+========================================================= -->
 
-<section id="about" class="section about-section">
+<section class="section about-section" id="about">
 
 ```
 <div class="container">
 
-    <div class="section-header">
+    <div class="section-intro">
 
-        <div class="section-label">ABOUT MYZAS</div>
+        <div>
+            <span class="eyebrow">ABOUT MYZAS</span>
 
-        <h2>
-            Technology built around
-            <span>your business.</span>
-        </h2>
+            <h2>
+                Technology expertise
+                <span>with a business mindset.</span>
+            </h2>
+        </div>
 
         <p>
-            We combine technology expertise, domain knowledge and
-            disciplined project execution to create practical
-            digital solutions for modern businesses.
+            We combine technology expertise, domain knowledge
+            and disciplined delivery to create practical digital
+            solutions for businesses.
         </p>
 
     </div>
@@ -236,59 +278,79 @@
 
     <div class="about-layout">
 
-        <div class="about-text">
+        <div class="about-content">
 
-            <p>
-                Myzas Technologies is a technology company specializing
-                in software products, IT services and digital solutions.
+            <p class="lead">
+                Myzas Technologies is a technology company
+                specializing in software products and IT services.
             </p>
 
             <p>
-                Our team works with businesses to understand their
-                requirements and build solutions that are scalable,
-                reliable and aligned with their goals.
+                We provide customized technology solutions designed
+                to help organizations improve their digital presence,
+                streamline operations and create new opportunities.
             </p>
 
             <p>
-                From software development and testing to cloud,
-                mobile applications and IT staffing, we provide
-                technology capabilities across the development lifecycle.
+                Our team brings together professionals across
+                software development, quality assurance, cloud,
+                mobile applications and other technology domains.
             </p>
 
             <a href="#contact" class="text-link">
-                Start a conversation <span>→</span>
+                Let's discuss your requirement
+                <span>→</span>
             </a>
 
         </div>
 
 
-        <div class="stats-grid">
+        <div class="about-features">
 
-            <div class="stat-card">
+            <div class="feature-card">
 
-                <span class="stat-number">150+</span>
-                <span class="stat-title">Projects Completed</span>
+                <div class="feature-number">01</div>
 
-            </div>
+                <div>
+                    <h3>Practical Solutions</h3>
 
-            <div class="stat-card">
-
-                <span class="stat-number">50+</span>
-                <span class="stat-title">Technology Experts</span>
-
-            </div>
-
-            <div class="stat-card">
-
-                <span class="stat-number">90+</span>
-                <span class="stat-title">Satisfied Customers</span>
+                    <p>
+                        Technology designed around real business
+                        requirements and measurable needs.
+                    </p>
+                </div>
 
             </div>
 
-            <div class="stat-card">
 
-                <span class="stat-number">20+</span>
-                <span class="stat-title">Industry Awards</span>
+            <div class="feature-card">
+
+                <div class="feature-number">02</div>
+
+                <div>
+                    <h3>Scalable Technology</h3>
+
+                    <p>
+                        Solutions built with flexibility,
+                        reliability and future growth in mind.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">03</div>
+
+                <div>
+                    <h3>Quality Focus</h3>
+
+                    <p>
+                        Structured processes that support
+                        dependable technology delivery.
+                    </p>
+                </div>
 
             </div>
 
@@ -301,25 +363,27 @@
 
 </section>
 
-<!-- ================= SERVICES ================= -->
+<!-- =========================================================
+     SERVICES
+========================================================= -->
 
-<section id="services" class="section services-section">
+<section class="section services-section" id="services">
 
 ```
 <div class="container">
 
-    <div class="section-header center">
+    <div class="section-heading">
 
-        <div class="section-label">WHAT WE DO</div>
+        <span class="eyebrow">WHAT WE DO</span>
 
         <h2>
-            Technology services for
-            <span>real business needs.</span>
+            Technology services
+            <span>built for your goals.</span>
         </h2>
 
         <p>
-            Flexible technology capabilities designed to support
-            your business from idea to implementation.
+            From product development to technology support,
+            we provide services designed around your business.
         </p>
 
     </div>
@@ -327,21 +391,22 @@
 
     <div class="services-grid">
 
-
-        <article class="service-card">
+        <article class="service-card service-featured">
 
             <div class="service-number">01</div>
 
-            <div class="service-icon">☁</div>
+            <div class="service-icon">⌘</div>
 
-            <h3>Cloud Computing</h3>
+            <h3>Software Development</h3>
 
             <p>
-                Secure, scalable and cost-effective cloud solutions
-                designed for modern business environments.
+                Customized software products and applications
+                built around your business requirements.
             </p>
 
-            <a href="#contact">Learn more →</a>
+            <a href="#contact">
+                Learn more <span>→</span>
+            </a>
 
         </article>
 
@@ -350,16 +415,18 @@
 
             <div class="service-number">02</div>
 
-            <div class="service-icon">✓</div>
+            <div class="service-icon">☁</div>
 
-            <h3>Quality Assurance</h3>
+            <h3>Cloud Computing</h3>
 
             <p>
-                Systematic quality processes and testing practices
-                that improve software reliability and performance.
+                Secure, scalable and cost-effective cloud
+                technology solutions for modern businesses.
             </p>
 
-            <a href="#contact">Learn more →</a>
+            <a href="#contact">
+                Learn more <span>→</span>
+            </a>
 
         </article>
 
@@ -368,16 +435,18 @@
 
             <div class="service-number">03</div>
 
-            <div class="service-icon">▣</div>
+            <div class="service-icon">✓</div>
 
-            <h3>Mobile Applications</h3>
+            <h3>Quality Assurance</h3>
 
             <p>
-                User-focused mobile applications designed to connect
-                businesses with customers and employees.
+                Systematic testing and quality processes
+                to improve software reliability.
             </p>
 
-            <a href="#contact">Learn more →</a>
+            <a href="#contact">
+                Learn more <span>→</span>
+            </a>
 
         </article>
 
@@ -386,16 +455,18 @@
 
             <div class="service-number">04</div>
 
-            <div class="service-icon">&lt;/&gt;</div>
+            <div class="service-icon">▣</div>
 
-            <h3>Software Development</h3>
+            <h3>Mobile Applications</h3>
 
             <p>
-                Customized software products and applications built
-                around your business requirements.
+                Mobile applications designed to connect
+                businesses with customers and employees.
             </p>
 
-            <a href="#contact">Learn more →</a>
+            <a href="#contact">
+                Learn more <span>→</span>
+            </a>
 
         </article>
 
@@ -404,16 +475,18 @@
 
             <div class="service-number">05</div>
 
-            <div class="service-icon">◇</div>
+            <div class="service-icon">◈</div>
 
             <h3>Software Testing</h3>
 
             <p>
-                Functional and quality testing designed to help
-                deliver dependable software products.
+                Functional and quality testing for
+                dependable software products.
             </p>
 
-            <a href="#contact">Learn more →</a>
+            <a href="#contact">
+                Learn more <span>→</span>
+            </a>
 
         </article>
 
@@ -427,11 +500,13 @@
             <h3>IT Staff Augmentation</h3>
 
             <p>
-                Skilled technology professionals to support teams,
-                projects and evolving business requirements.
+                Skilled technology professionals to support
+                your teams and projects.
             </p>
 
-            <a href="#contact">Learn more →</a>
+            <a href="#contact">
+                Learn more <span>→</span>
+            </a>
 
         </article>
 
@@ -442,85 +517,76 @@
 
 </section>
 
-<!-- ================= TECHNOLOGIES ================= -->
+<!-- =========================================================
+     TECHNOLOGIES
+========================================================= -->
 
-<section id="technologies" class="section technology-section">
+<section class="section technologies-section" id="technologies">
 
 ```
 <div class="container">
 
     <div class="technology-layout">
 
-        <div class="technology-intro">
+        <div class="technology-heading">
 
-            <div class="section-label">OUR TECHNOLOGY</div>
+            <span class="eyebrow">OUR TECHNOLOGY</span>
 
             <h2>
-                Technology expertise
-                <span>that scales with you.</span>
+                Expertise across
+                <span>modern platforms.</span>
             </h2>
 
             <p>
-                We work across modern technology ecosystems to
-                deliver solutions that are practical, maintainable
-                and ready for changing business requirements.
+                Our technology capabilities cover a range of
+                platforms and disciplines that support modern
+                digital transformation.
             </p>
 
-            <a href="#contact" class="btn dark-btn">
-                Discuss Your Project →
+            <a href="#contact" class="btn btn-primary">
+                Discuss a Project
+                <span>→</span>
             </a>
 
         </div>
 
 
-        <div class="technology-grid">
+        <div class="technology-list">
 
             <div class="technology-item">
-                <span class="tech-symbol">CS</span>
-                <div>
-                    <strong>Clinical SAS</strong>
-                    <small>Healthcare & Data</small>
-                </div>
+                <span class="tech-number">01</span>
+                <strong>Clinical SAS</strong>
+                <span class="tech-arrow">↗</span>
             </div>
 
             <div class="technology-item">
-                <span class="tech-symbol">SF</span>
-                <div>
-                    <strong>Salesforce</strong>
-                    <small>CRM Solutions</small>
-                </div>
+                <span class="tech-number">02</span>
+                <strong>Salesforce</strong>
+                <span class="tech-arrow">↗</span>
             </div>
 
             <div class="technology-item">
-                <span class="tech-symbol">DV</span>
-                <div>
-                    <strong>DevOps</strong>
-                    <small>Cloud & Delivery</small>
-                </div>
+                <span class="tech-number">03</span>
+                <strong>DevOps</strong>
+                <span class="tech-arrow">↗</span>
             </div>
 
             <div class="technology-item">
-                <span class="tech-symbol">CY</span>
-                <div>
-                    <strong>Cyber Security</strong>
-                    <small>Security Solutions</small>
-                </div>
+                <span class="tech-number">04</span>
+                <strong>Cyber Security</strong>
+                <span class="tech-arrow">↗</span>
             </div>
 
             <div class="technology-item">
-                <span class="tech-symbol">SA</span>
-                <div>
-                    <strong>SAP</strong>
-                    <small>Enterprise Solutions</small>
-                </div>
+                <span class="tech-number">05</span>
+                <strong>SAP</strong>
+                <span class="tech-arrow">↗</span>
             </div>
 
             <div class="technology-item">
-                <span class="tech-symbol">RE</span>
-                <div>
-                    <strong>ReactJS</strong>
-                    <small>Web Applications</small>
-                </div>
+                <span class="tech-number">06</span>
+                <strong>ReactJS</strong>
+                <span class="tech-arrow">↗</span>
             </div>
 
         </div>
@@ -532,22 +598,22 @@
 
 </section>
 
-<!-- ================= HEALTHCARE ================= -->
+<!-- =========================================================
+     HEALTHCARE
+========================================================= -->
 
-<section id="healthcare" class="healthcare-section">
+<section class="healthcare-section" id="healthcare">
 
 ```
 <div class="container healthcare-layout">
 
     <div class="healthcare-content">
 
-        <div class="section-label light">
-            HEALTHCARE TECHNOLOGY
-        </div>
+        <span class="eyebrow light">HEALTHCARE TECHNOLOGY</span>
 
         <h2>
-            Clinical SAS for
-            <span>data-driven healthcare.</span>
+            Clinical technology
+            <span>meets data expertise.</span>
         </h2>
 
         <p>
@@ -557,56 +623,37 @@
         </p>
 
         <p>
-            Our technology expertise combines knowledge of
-            clinical trial processes with data analysis and
-            technology solutions.
+            Our expertise combines knowledge of clinical trial
+            processes with data analysis and technology solutions.
         </p>
 
-        <a href="#contact" class="btn light-btn">
-            Talk to Our Team →
+        <a href="#contact" class="light-link">
+            Explore our capabilities
+            <span>→</span>
         </a>
 
     </div>
 
 
-    <div class="healthcare-visual">
+    <div class="healthcare-card">
 
-        <div class="data-card">
-
-            <div class="data-card-header">
-                <span>CLINICAL DATA</span>
-                <span class="live-dot">● LIVE</span>
-            </div>
-
-            <div class="chart">
-
-                <div class="chart-line line-one"></div>
-                <div class="chart-line line-two"></div>
-                <div class="chart-line line-three"></div>
-
-                <div class="chart-bars">
-                    <span style="height:35%"></span>
-                    <span style="height:55%"></span>
-                    <span style="height:45%"></span>
-                    <span style="height:72%"></span>
-                    <span style="height:62%"></span>
-                    <span style="height:88%"></span>
-                    <span style="height:78%"></span>
-                </div>
-
-            </div>
-
-            <div class="data-card-footer">
-                <span>Data Analysis</span>
-                <strong>+28.4%</strong>
-            </div>
-
+        <div class="healthcare-card-top">
+            <span>01</span>
+            <span>HEALTHCARE</span>
         </div>
 
-        <div class="healthcare-badge">
-            <strong>01</strong>
-            <span>Clinical<br>Data</span>
+        <div class="healthcare-symbol">
+            +
         </div>
+
+        <h3>Clinical Data</h3>
+
+        <p>
+            Technology solutions supporting clinical research,
+            data management and analysis.
+        </p>
+
+        <div class="healthcare-line"></div>
 
     </div>
 
@@ -615,20 +662,22 @@
 
 </section>
 
-<!-- ================= VALUES ================= -->
+<!-- =========================================================
+     VISION / MISSION
+========================================================= -->
 
 <section class="section values-section">
 
 ```
 <div class="container">
 
-    <div class="section-header center">
+    <div class="section-heading">
 
-        <div class="section-label">OUR VALUES</div>
+        <span class="eyebrow">OUR VALUES</span>
 
         <h2>
-            Built on expertise.
-            <span>Driven by purpose.</span>
+            Built around people,
+            <span>technology and trust.</span>
         </h2>
 
     </div>
@@ -638,27 +687,28 @@
 
         <div class="value-card">
 
-            <div class="value-icon">01</div>
+            <span class="value-number">01</span>
 
             <h3>Our Vision</h3>
 
             <p>
-                To become a trusted technology partner by delivering
-                innovative and practical digital solutions.
+                To become a trusted technology partner by
+                delivering innovative and practical digital
+                solutions.
             </p>
 
         </div>
 
 
-        <div class="value-card featured">
+        <div class="value-card active">
 
-            <div class="value-icon">02</div>
+            <span class="value-number">02</span>
 
             <h3>Our Mission</h3>
 
             <p>
-                To combine skilled talent, technology and domain
-                expertise to create meaningful value for our clients.
+                To combine skilled talent, technology and
+                domain expertise to create value for our clients.
             </p>
 
         </div>
@@ -666,13 +716,13 @@
 
         <div class="value-card">
 
-            <div class="value-icon">03</div>
+            <span class="value-number">03</span>
 
             <h3>Our Team</h3>
 
             <p>
-                Professionals with expertise across software,
-                testing, cloud and technology services.
+                Professionals with expertise across software
+                development, testing and technology services.
             </p>
 
         </div>
@@ -684,16 +734,18 @@
 
 </section>
 
-<!-- ================= TESTIMONIALS ================= -->
+<!-- =========================================================
+     TESTIMONIALS
+========================================================= -->
 
 <section class="section testimonials-section">
 
 ```
 <div class="container">
 
-    <div class="section-header center">
+    <div class="section-heading">
 
-        <div class="section-label">CLIENT EXPERIENCE</div>
+        <span class="eyebrow">CLIENT EXPERIENCE</span>
 
         <h2>
             What our customers
@@ -705,74 +757,69 @@
 
     <div class="testimonial-grid">
 
-        <div class="testimonial-card">
+        <article class="testimonial-card">
 
-            <div class="quote">“</div>
+            <div class="quote-mark">“</div>
 
             <p>
-                We have worked with Myzas Technologies on various
-                projects and found them to provide quality service
-                and expertise for our programming needs.
+                We have worked with Myzas Technologies on
+                various projects and found them to provide
+                quality service and expertise for our
+                programming needs.
             </p>
 
-            <div class="testimonial-person">
-
-                <div class="avatar">S</div>
+            <div class="testimonial-author">
+                <div class="author-avatar">S</div>
 
                 <div>
                     <strong>Sagar</strong>
                     <span>CEO</span>
                 </div>
-
             </div>
 
-        </div>
+        </article>
 
 
-        <div class="testimonial-card">
+        <article class="testimonial-card">
 
-            <div class="quote">“</div>
+            <div class="quote-mark">“</div>
 
             <p>
                 Under tight deadlines and with high expectations,
                 Myzas Technologies was a pleasure to partner with.
             </p>
 
-            <div class="testimonial-person">
-
-                <div class="avatar">K</div>
+            <div class="testimonial-author">
+                <div class="author-avatar">K</div>
 
                 <div>
                     <strong>Kranthi</strong>
                     <span>Project Manager</span>
                 </div>
-
             </div>
 
-        </div>
+        </article>
 
 
-        <div class="testimonial-card">
+        <article class="testimonial-card">
 
-            <div class="quote">“</div>
+            <div class="quote-mark">“</div>
 
             <p>
                 Myzas Technologies has been a professional and
                 committed partner for our mobile application testing.
             </p>
 
-            <div class="testimonial-person">
-
-                <div class="avatar">S</div>
+            <div class="testimonial-author">
+                <div class="author-avatar">S</div>
 
                 <div>
                     <strong>Supraja</strong>
                     <span>HR Manager</span>
                 </div>
-
             </div>
 
-        </div>
+        </article>
 
     </div>
 
@@ -781,18 +828,18 @@
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- =========================================================
+     CONTACT
+========================================================= -->
 
-<section id="contact" class="contact-section">
+<section class="contact-section" id="contact">
 
 ```
 <div class="container contact-layout">
 
-    <div class="contact-content">
+    <div class="contact-intro">
 
-        <div class="section-label light">
-            GET IN TOUCH
-        </div>
+        <span class="eyebrow light">GET IN TOUCH</span>
 
         <h2>
             Let's build something
@@ -801,57 +848,61 @@
 
         <p>
             Have a project, business requirement or technology
-            challenge? Talk to our team and let's explore how
-            we can help.
+            challenge? Our team would be happy to discuss it with you.
         </p>
+
+        <a href="mailto:hr@myzastechnologies.com" class="contact-email">
+            hr@myzastechnologies.com
+            <span>↗</span>
+        </a>
 
     </div>
 
 
-    <div class="contact-card">
+    <div class="contact-details">
 
-        <a href="tel:+918008166150" class="contact-row">
+        <div class="contact-detail">
 
             <div class="contact-icon">☎</div>
 
             <div>
-                <small>CALL US</small>
-                <strong>+91 8008166150</strong>
+                <span>PHONE</span>
+
+                <a href="tel:+918008166150">
+                    +91 8008166150
+                </a>
             </div>
 
-            <span class="arrow">→</span>
-
-        </a>
+        </div>
 
 
-        <a href="mailto:hr@myzastechnologies.com"
-           class="contact-row">
+        <div class="contact-detail">
 
             <div class="contact-icon">@</div>
 
             <div>
-                <small>EMAIL US</small>
-                <strong>hr@myzastechnologies.com</strong>
+                <span>EMAIL</span>
+
+                <a href="mailto:hr@myzastechnologies.com">
+                    hr@myzastechnologies.com
+                </a>
             </div>
 
-            <span class="arrow">→</span>
-
-        </a>
+        </div>
 
 
-        <div class="contact-row">
+        <div class="contact-detail">
 
             <div class="contact-icon">⌖</div>
 
             <div>
-                <small>VISIT US</small>
+                <span>OFFICE</span>
 
-                <strong>
-                    Second Floor, B-69, B-Block,
-                    Sector 6, Noida,
+                <p>
+                    Second Floor, B-69, B-Block,<br>
+                    Sector 6, Noida,<br>
                     Uttar Pradesh 201309
-                </strong>
-
+                </p>
             </div>
 
         </div>
@@ -863,24 +914,31 @@
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+</main>
 
-<footer>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
 
 ```
-<div class="container footer-top">
+<div class="container footer-main">
 
     <div class="footer-brand">
 
-        <a href="#home" class="logo footer-logo">
-            <span class="logo-main">MYZAS</span>
-            <span class="logo-sub">TECHNOLOGIES</span>
+        <a href="#home" class="footer-logo">
+            <img src="images/logo.png" alt="Myzas Technologies">
         </a>
 
         <p>
             Software products, IT services and technology
             solutions for modern businesses.
         </p>
+
+        <a href="mailto:hr@myzastechnologies.com" class="footer-mail">
+            hr@myzastechnologies.com
+        </a>
 
     </div>
 
@@ -902,8 +960,8 @@
         <h4>Services</h4>
 
         <a href="#services">Software Development</a>
-        <a href="#services">Software Testing</a>
         <a href="#services">Cloud Computing</a>
+        <a href="#services">Quality Assurance</a>
         <a href="#services">IT Staff Augmentation</a>
 
     </div>
@@ -913,35 +971,28 @@
 
         <h4>Contact</h4>
 
-        <a href="tel:+918008166150">+91 8008166150</a>
-
-        <a href="mailto:hr@myzastechnologies.com">
-            hr@myzastechnologies.com
+        <a href="tel:+918008166150">
+            +91 8008166150
         </a>
 
-        <span>
-            Noida, Uttar Pradesh 201309
-        </span>
+        <p>
+            Noida, Uttar Pradesh<br>
+            India 201309
+        </p>
 
     </div>
 
 </div>
 
 
-<div class="footer-bottom">
+<div class="container footer-bottom">
 
-    <div class="container">
+    <p>
+        © 2026 Myzas Technologies Private Limited.
+        All Rights Reserved.
+    </p>
 
-        <span>
-            © 2026 Myzas Technologies Private Limited.
-            All Rights Reserved.
-        </span>
-
-        <span>
-            Technology • Innovation • Growth
-        </span>
-
-    </div>
+    <a href="#home">Back to top ↑</a>
 
 </div>
 ```
