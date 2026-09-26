@@ -1,124 +1,167 @@
-// =====================================================
-// MOBILE NAVIGATION
-// =====================================================
+// ================= MOBILE MENU =================
 
 function toggleMenu() {
-const nav = document.getElementById("navMenu");
+    const navMenu = document.getElementById("navMenu");
+    const menuButton = document.querySelector(".menu-btn");
 
-```
-if (nav) {
-    nav.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+    if (navMenu.classList.contains("active")) {
+        menuButton.setAttribute("aria-expanded", "true");
+    } else {
+        menuButton.setAttribute("aria-expanded", "false");
+    }
 }
-```
 
-}
 
-// =====================================================
-// CLOSE MOBILE MENU AFTER CLICKING A LINK
-// =====================================================
+// ================= CLOSE MENU ON LINK CLICK =================
 
 document.querySelectorAll("#navMenu a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        const navMenu = document.getElementById("navMenu");
+        const menuButton = document.querySelector(".menu-btn");
 
-```
-link.addEventListener("click", function () {
-
-    const nav = document.getElementById("navMenu");
-
-    if (nav) {
-        nav.classList.remove("active");
-    }
-
-});
-```
-
+        navMenu.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+    });
 });
 
-// =====================================================
-// CLOSE MENU WHEN CLICKING OUTSIDE
-// =====================================================
+
+// ================= CLOSE MENU WHEN CLICKING OUTSIDE =================
 
 document.addEventListener("click", function (event) {
+    const navMenu = document.getElementById("navMenu");
+    const menuButton = document.querySelector(".menu-btn");
 
-```
-const nav = document.getElementById("navMenu");
-const menuButton = document.querySelector(".menu-btn");
-
-if (!nav || !menuButton) {
-    return;
-}
-
-if (
-    nav.classList.contains("active") &&
-    !nav.contains(event.target) &&
-    !menuButton.contains(event.target)
-) {
-    nav.classList.remove("active");
-}
-```
-
+    if (
+        navMenu &&
+        menuButton &&
+        navMenu.classList.contains("active") &&
+        !navMenu.contains(event.target) &&
+        !menuButton.contains(event.target)
+    ) {
+        navMenu.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
+    }
 });
 
-// =====================================================
-// HEADER SCROLL EFFECT
-// =====================================================
+
+// ================= HEADER SCROLL EFFECT =================
 
 window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
 
-```
-const header = document.querySelector(".header");
-
-if (!header) {
-    return;
-}
-
-if (window.scrollY > 30) {
-    header.classList.add("scrolled");
-} else {
-    header.classList.remove("scrolled");
-}
-```
-
+    if (window.scrollY > 30) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
 });
 
-// =====================================================
-// SMOOTH SCROLL
-// =====================================================
 
-document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+// ================= ACTIVE NAVIGATION =================
 
-```
-link.addEventListener("click", function (event) {
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll("#navMenu a");
 
-    const targetId = this.getAttribute("href");
+function updateActiveNavigation() {
+    let currentSection = "";
 
-    if (!targetId || targetId === "#") {
-        return;
-    }
+    sections.forEach(function (section) {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
 
-    const target = document.querySelector(targetId);
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+        ) {
+            currentSection = section.getAttribute("id");
+        }
+    });
 
-    if (target) {
+    navLinks.forEach(function (link) {
+        link.classList.remove("active");
 
-        event.preventDefault();
+        const href = link.getAttribute("href");
 
-        target.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
+        if (href === "#" + currentSection) {
+            link.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", updateActiveNavigation);
+
+document.addEventListener("DOMContentLoaded", updateActiveNavigation);
+
+
+// ================= SCROLL REVEAL ANIMATION =================
+
+const revealElements = document.querySelectorAll(
+    ".section-heading, .service-card, .technology-grid div, .mission-grid div, .testimonial, .about-grid, .healthcare-content, .contact-grid"
+);
+
+const revealObserver = new IntersectionObserver(
+    function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("reveal-visible");
+                observer.unobserve(entry.target);
+            }
         });
-
+    },
+    {
+        threshold: 0.12
     }
+);
 
+revealElements.forEach(function (element) {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
 });
-```
 
-});
 
-// =====================================================
-// CURRENT YEAR
-// =====================================================
+// ================= CURRENT YEAR =================
 
-const yearElement = document.querySelector(".copyright-year");
+const yearElement = document.getElementById("currentYear");
 
 if (yearElement) {
-yearElement.textContent = new Date().getFullYear();
+    yearElement.textContent = new Date().getFullYear();
 }
+
+
+// ================= CONTACT EMAIL PROTECTION =================
+
+document.querySelectorAll('a[href^="mailto:"]').forEach(function (emailLink) {
+    emailLink.addEventListener("click", function () {
+        const email = emailLink.getAttribute("href");
+
+        if (email) {
+            window.location.href = email;
+        }
+    });
+});
+
+
+// ================= SMOOTH SCROLL =================
+
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+        const targetId = link.getAttribute("href");
+
+        if (targetId === "#") {
+            return;
+        }
+
+        const target = document.querySelector(targetId);
+
+        if (target) {
+            event.preventDefault();
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
+});
