@@ -1,638 +1,607 @@
-```css
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
 
-html {
-    scroll-behavior: smooth;
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #172033;
-    background: #ffffff;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-
-/* ================= HEADER ================= */
-
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #ffffff;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-}
-
-.nav {
-    min-height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* LOGO IMAGE */
-
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.logo img {
-    width: 180px;
-    height: auto;
-    max-height: 60px;
-    display: block;
-    object-fit: contain;
-}
-
-nav {
-    display: flex;
-    gap: 28px;
-}
-
-nav a {
-    color: #172033;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #1264d8;
-}
-
-.menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: #172033;
-}
-
-
-/* ================= HERO ================= */
-
-.hero {
-    min-height: 650px;
-    display: flex;
-    align-items: center;
-
-    background:
-        linear-gradient(
-            120deg,
-            #071b3a 0%,
-            #0b3978 55%,
-            #1264d8 100%
-        );
-
-    color: white;
-}
-
-.hero-content {
-    display: grid;
-    grid-template-columns: 1.5fr 0.8fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.small-title {
-    color: #4da3ff;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 13px;
-    margin-bottom: 15px;
-}
-
-.hero h1 {
-    font-size: 58px;
-    line-height: 1.08;
-    margin-bottom: 25px;
-}
-
-.hero h1 span {
-    display: block;
-    color: #4da3ff;
-}
-
-.hero-text > p:not(.small-title) {
-    max-width: 650px;
-    color: #d9e7fa;
-    font-size: 17px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 35px;
-}
-
-.btn {
-    padding: 14px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s;
-}
-
-.primary {
-    background: #ffffff;
-    color: #1264d8;
-}
-
-.primary:hover {
-    background: #4da3ff;
-    color: white;
-}
-
-.secondary {
-    border: 1px solid white;
-    color: white;
-}
-
-.secondary:hover {
-    background: white;
-    color: #1264d8;
-}
-
-.hero-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 45px 35px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-}
-
-.card-icon {
-    font-size: 55px;
-    margin-bottom: 20px;
-}
-
-
-/* ================= SECTIONS ================= */
-
-.section {
-    padding: 100px 0;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 55px;
-}
-
-.section-heading p {
-    color: #1264d8;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.section-heading h2 {
-    font-size: 40px;
-    margin: 8px 0;
-}
-
-.section-heading span {
-    color: #667085;
-}
-
-
-/* ================= ABOUT ================= */
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.about-grid p {
-    color: #667085;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-.about-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.about-box div {
-    padding: 30px;
-    background: #f4f8ff;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.about-box strong {
-    display: block;
-    color: #1264d8;
-    font-size: 35px;
-}
-
-.about-box span {
-    color: #667085;
-}
-
-
-/* ================= SERVICES ================= */
-
-.services-section {
-    background: #f7faff;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.service-card {
-    background: white;
-    padding: 35px;
-    border-radius: 12px;
-    border: 1px solid #e7edf7;
-    transition: 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 35px rgba(20, 70, 130, 0.12);
-}
-
-.service-icon {
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    margin-bottom: 12px;
-    font-size: 21px;
-}
-
-.service-card p {
-    color: #667085;
-}
-
-
-/* ================= TECHNOLOGIES ================= */
-
-.technology-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.technology-grid div {
-    border: 1px solid #e2e8f0;
-    padding: 28px;
-    text-align: center;
-    font-weight: 700;
-    color: #1264d8;
-    border-radius: 10px;
-    background: white;
-    transition: 0.3s;
-}
-
-.technology-grid div:hover {
-    background: #1264d8;
-    color: white;
-}
-
-
-/* ================= HEALTHCARE ================= */
-
-.healthcare {
-    padding: 100px 0;
-    background: #071b3a;
-    color: white;
-}
-
-.healthcare-content {
-    display: grid;
-    grid-template-columns: 1.4fr 0.8fr;
-    gap: 80px;
-    align-items: center;
-}
-
-.healthcare h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-.healthcare p {
-    color: #c8d6e8;
-    margin-bottom: 20px;
-}
-
-.healthcare-card {
-    padding: 40px;
-    border-radius: 15px;
-    background: #0c315f;
-}
-
-.healthcare-card span {
-    color: #4da3ff;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-
-/* ================= MISSION ================= */
-
-.mission {
-    background: #f7faff;
-}
-
-.mission-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.mission-grid div {
-    background: white;
-    padding: 35px;
-    border-radius: 10px;
-    border: 1px solid #e5eaf2;
-}
-
-.mission-grid h3 {
-    color: #1264d8;
-    margin-bottom: 12px;
-}
-
-.mission-grid p {
-    color: #667085;
-}
-
-
-/* ================= TESTIMONIALS ================= */
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.testimonial {
-    padding: 35px;
-    border-radius: 10px;
-    background: #f7faff;
-    border-left: 4px solid #1264d8;
-}
-
-.testimonial p {
-    color: #667085;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-.testimonial h4 {
-    color: #172033;
-}
-
-.testimonial span {
-    color: #1264d8;
-    font-size: 14px;
-}
-
-
-/* ================= CONTACT ================= */
-
-.contact {
-    padding: 100px 0;
-    background: #1264d8;
-    color: white;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-}
-
-.contact h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    color: #dbeafe;
-}
-
-.contact .small-title {
-    color: #9bd0ff;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.contact-item {
-    display: flex;
-    gap: 18px;
-    align-items: flex-start;
-}
-
-.contact-item > span {
-    font-size: 25px;
-}
-
-.contact-item strong {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-item a {
-    color: white;
-    text-decoration: none;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-
-/* ================= FOOTER ================= */
-
-footer {
-    background: #071426;
-    color: white;
-    padding-top: 65px;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 60px;
-    padding-bottom: 50px;
-}
-
-.footer-content h3 {
-    color: #4da3ff;
-    margin-bottom: 15px;
-}
-
-.footer-content h4 {
-    margin-bottom: 15px;
-}
-
-.footer-content p {
-    color: #a9b7c9;
-    margin-bottom: 8px;
-}
-
-.footer-content a {
-    display: block;
-    color: #a9b7c9;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-.footer-content a:hover {
-    color: white;
-}
-
-.copyright {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #243247;
-    color: #8997aa;
-    font-size: 14px;
-}
-
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 850px) {
-
-    .nav {
-        min-height: 70px;
-    }
-
-    .logo img {
-        width: 145px;
-        max-height: 50px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 20px;
-        flex-direction: column;
-        gap: 18px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero-content,
-    .about-grid,
-    .healthcare-content,
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .services-grid,
-    .technology-grid,
-    .mission-grid,
-    .testimonial-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .section,
-    .contact,
-    .healthcare {
-        padding: 70px 0;
-    }
-
-    .section-heading h2 {
-        font-size: 32px;
-    }
-
-    .contact h2 {
-        font-size: 35px;
-    }
-
-    .hero-buttons {
-        flex-wrap: wrap;
-    }
-
-}
-
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 480px) {
-
-    .container {
-        width: 92%;
-    }
-
-    .logo img {
-        width: 130px;
-        max-height: 45px;
-    }
-
-    .hero h1 {
-        font-size: 35px;
-    }
-
-    .hero-text > p:not(.small-title) {
-        font-size: 16px;
-    }
-
-    .hero-card {
-        padding: 30px 25px;
-    }
-
-    .about-box {
-        grid-template-columns: 1fr;
-    }
-
-    .btn {
-        padding: 12px 20px;
-    }
-
-}
 ```
+<title>Myzas Technologies Private Limited | IT Solutions</title>
+
+<meta name="description"
+      content="Myzas Technologies provides software development, software testing, cloud computing, mobile applications, IT staff augmentation and technology services.">
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+    <div class="container nav">
+
+```
+    <a href="#home" class="logo">
+        MYZAS<span>TECHNOLOGIES</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#healthcare">Healthcare</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+</div>
+```
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+```
+<div class="container hero-content">
+
+    <div class="hero-text">
+
+        <p class="small-title">MYZAS TECHNOLOGIES PRIVATE LIMITED</p>
+
+        <h1>
+            Technology Solutions
+            <span>For Modern Businesses</span>
+        </h1>
+
+        <p>
+            Myzas Technologies provides customized software products,
+            IT services and technology solutions designed to help
+            businesses improve their digital presence and expand
+            their market opportunities.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#services" class="btn primary">Our Services</a>
+            <a href="#contact" class="btn secondary">Contact Us</a>
+        </div>
+
+    </div>
+
+    <div class="hero-card">
+
+        <div class="card-icon">💻</div>
+
+        <h3>Software Development</h3>
+
+        <p>
+            Scalable and customized technology solutions
+            for businesses of different sizes.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <p>ABOUT COMPANY</p>
+
+        <h2>Welcome to Myzas Technologies</h2>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div>
+
+            <p>
+                Myzas Technologies is a technology company specializing
+                in software products and IT services.
+            </p>
+
+            <p>
+                We offer customized software products and IT solutions
+                designed to provide practical and scalable solutions
+                for our clients.
+            </p>
+
+            <p>
+                Our approach combines technology expertise, domain
+                knowledge and disciplined project management to
+                deliver solutions that support business growth.
+            </p>
+
+        </div>
+
+        <div class="about-box">
+
+            <div>
+                <strong>150+</strong>
+                <span>Projects Completed</span>
+            </div>
+
+            <div>
+                <strong>50+</strong>
+                <span>Expert Team</span>
+            </div>
+
+            <div>
+                <strong>90+</strong>
+                <span>Satisfied Customers</span>
+            </div>
+
+            <div>
+                <strong>20+</strong>
+                <span>Awards</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="section services-section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <p>WHAT WE DO</p>
+
+        <h2>Our Services</h2>
+
+        <span>
+            Technology services designed around your business needs.
+        </span>
+
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">☁️</div>
+
+            <h3>Cloud Computing</h3>
+
+            <p>
+                Secure, scalable and cost-effective cloud solutions
+                for modern businesses.
+            </p>
+        </div>
+
+
+        <div class="service-card">
+            <div class="service-icon">✓</div>
+
+            <h3>Quality Assurance</h3>
+
+            <p>
+                Systematic quality processes and testing techniques
+                to improve software reliability.
+            </p>
+        </div>
+
+
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+
+            <h3>Mobile Application</h3>
+
+            <p>
+                Mobile applications designed to connect businesses
+                with customers and employees.
+            </p>
+        </div>
+
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+
+            <h3>Software Development</h3>
+
+            <p>
+                Customized software solutions built around
+                your business requirements.
+            </p>
+        </div>
+
+
+        <div class="service-card">
+            <div class="service-icon">🧪</div>
+
+            <h3>Software Testing</h3>
+
+            <p>
+                Functional and quality testing to help deliver
+                dependable software products.
+            </p>
+        </div>
+
+
+        <div class="service-card">
+            <div class="service-icon">👥</div>
+
+            <h3>IT Staff Augmentation</h3>
+
+            <p>
+                Skilled IT professionals to support your
+                technology teams and projects.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= TECHNOLOGIES ================= -->
+
+<section id="technologies" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <p>TECHNOLOGY</p>
+
+        <h2>Our Technologies</h2>
+
+    </div>
+
+    <div class="technology-grid">
+
+        <div>Clinical SAS</div>
+        <div>Salesforce</div>
+        <div>DevOps</div>
+        <div>Cyber Security</div>
+        <div>SAP</div>
+        <div>ReactJS</div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= HEALTHCARE ================= -->
+
+<section id="healthcare" class="healthcare">
+
+```
+<div class="container healthcare-content">
+
+    <div>
+
+        <p class="small-title">HEALTHCARE TECHNOLOGY</p>
+
+        <h2>Clinical SAS</h2>
+
+        <p>
+            Clinical SAS is the application of SAS technology
+            within the clinical domain for clinical trial data
+            management and analysis.
+        </p>
+
+        <p>
+            Our technology expertise combines knowledge of
+            clinical trial processes with data analysis and
+            technology solutions.
+        </p>
+
+    </div>
+
+    <div class="healthcare-card">
+
+        <span>01</span>
+
+        <h3>Clinical Data</h3>
+
+        <p>
+            Technology solutions supporting clinical
+            research and data analysis.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= MISSION ================= -->
+
+<section class="section mission">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <p>OUR VALUES</p>
+
+        <h2>Vision & Mission</h2>
+
+    </div>
+
+    <div class="mission-grid">
+
+        <div>
+
+            <h3>Our Vision</h3>
+
+            <p>
+                To become a trusted technology partner by delivering
+                innovative and practical digital solutions.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Our Mission</h3>
+
+            <p>
+                To combine skilled talent, technology and domain
+                expertise to create value for our clients.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Our Team</h3>
+
+            <p>
+                We bring together professionals with expertise across
+                software development, testing and technology services.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="section testimonials">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <p>TESTIMONIALS</p>
+
+        <h2>What Our Customers Say</h2>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial">
+
+            <p>
+                "We have worked with Myzas Technologies on various
+                projects and found them to provide quality service
+                and expertise for our programming needs."
+            </p>
+
+            <h4>Sagar</h4>
+            <span>CEO</span>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <p>
+                "Under tight deadlines and with high expectations,
+                Myzas Technologies was a pleasure to partner with."
+            </p>
+
+            <h4>Kranthi</h4>
+            <span>Project Manager</span>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <p>
+                "Myzas Technologies has been a professional and
+                committed partner for our mobile application testing."
+            </p>
+
+            <h4>Supraja</h4>
+            <span>HR Manager</span>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+```
+<div class="container contact-grid">
+
+    <div>
+
+        <p class="small-title">GET IN TOUCH</p>
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Have a project or business requirement?
+            Contact our team to discuss your technology needs.
+        </p>
+
+    </div>
+
+
+    <div class="contact-info">
+
+        <div class="contact-item">
+
+            <span>📞</span>
+
+            <div>
+
+                <strong>Phone</strong>
+
+                <a href="tel:+918008166150">
+                    +91 8008166150
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <span>✉️</span>
+
+            <div>
+
+                <strong>Email</strong>
+
+                <a href="mailto:hr@myzastechnologies.com">
+                    hr@myzastechnologies.com
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <span>📍</span>
+
+            <div>
+
+                <strong>Office Address</strong>
+
+                <p>
+                    Second Floor, B-69, B-Block,<br>
+                    Sector 6, Noida,<br>
+                    Uttar Pradesh 201309
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+```
+<div class="container footer-content">
+
+    <div>
+
+        <h3>MYZAS TECHNOLOGIES</h3>
+
+        <p>
+            Software products, IT services and technology
+            solutions for modern businesses.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h4>Quick Links</h4>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <div>
+
+        <h4>Contact</h4>
+
+        <p>+91 8008166150</p>
+
+        <p>hr@myzastechnologies.com</p>
+
+        <p>
+            Noida, Uttar Pradesh 201309
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="copyright">
+
+    © 2026 Myzas Technologies Private Limited.
+    All Rights Reserved.
+
+</div>
+```
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
