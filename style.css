@@ -20,6 +20,25 @@ body {
     max-width: 1200px;
     margin: auto;
 }
+/* ================= TOP CONTACT BAR ================= */
+
+.top-contact {
+    background: #071b3a;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.top-contact .container {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.top-contact span {
+    white-space: nowrap;
+}
 
 
 /* ================= HEADER ================= */
@@ -40,15 +59,18 @@ body {
 }
 
 .logo {
-    color: #1264d8;
-    font-size: 21px;
-    font-weight: 800;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
-.logo span {
-    color: #172033;
-    margin-left: 4px;
+.logo img {
+    width: 190px;
+    height: auto;
+    max-height: 65px;
+    object-fit: contain;
+    display: block;
 }
 
 nav {
