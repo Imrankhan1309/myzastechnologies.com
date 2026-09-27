@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Myzas Technologies Private Limited</title>
-
-    <meta name="description"
-        content="Myzas Technologies Private Limited provides software development, software testing, IT staffing, cloud computing, quality assurance and mobile application services.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,110 +12,325 @@
 <body>
 
 <!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="container header-container">
 
-<header class="header">
-
-    <div class="container nav">
-
-        <a href="#home" class="logo">
-            <img src="logo.png" alt="Myzas Technologies">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Myzas Technologies Private Limited">
         </a>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-        <nav id="navMenu">
+        <nav class="main-nav" id="navMenu">
 
             <a href="#home">Home</a>
 
             <a href="#about">About Us</a>
 
+            <!-- SERVICES -->
             <div class="dropdown">
-                <a href="#services">Services ▾</a>
+                <a href="#services" class="dropdown-toggle">
+                    Services
+                </a>
 
                 <div class="dropdown-menu">
-                    <a href="#services">Software Development</a>
-                    <a href="#services">Software Testing</a>
-                    <a href="#services">IT Staff Augment</a>
-                    <a href="#services">Cloud Computing</a>
-                    <a href="#services">Quality Assurance</a>
-                    <a href="#services">Mobile Application</a>
+
+                    <a href="#software-development">
+                        Software Development
+                    </a>
+
+                    <a href="#software-testing">
+                        Software Testing
+                    </a>
+
+                    <a href="#staff-augment">
+                        IT Staff Augment
+                    </a>
+
+                    <a href="#cloud-computing">
+                        Cloud Computing
+                    </a>
+
+                    <a href="#quality-assurance">
+                        Quality Assurance
+                    </a>
+
+                    <a href="#mobile-application">
+                        Mobile Application
+                    </a>
+
                 </div>
             </div>
 
+
+            <!-- TECHNOLOGIES -->
             <div class="dropdown">
-                <a href="#technologies">Technologies ▾</a>
+                <a href="#technologies" class="dropdown-toggle">
+                    Technologies
+                </a>
 
                 <div class="dropdown-menu">
-                    <a href="#technologies">Clinical SAS</a>
-                    <a href="#technologies">Salesforce</a>
-                    <a href="#technologies">DevOps</a>
-                    <a href="#technologies">Cyber Security</a>
-                    <a href="#technologies">SAP</a>
-                    <a href="#technologies">ReactJS</a>
+
+                    <a href="#clinical-sas">
+                        Clinical SAS
+                    </a>
+
+                    <a href="#salesforce">
+                        Salesforce
+                    </a>
+
+                    <a href="#devops">
+                        Devops
+                    </a>
+
+                    <a href="#cyber-security">
+                        Cyber Security
+                    </a>
+
+                    <a href="#sap">
+                        SAP
+                    </a>
+
+                    <a href="#reactjs">
+                        ReactJS
+                    </a>
+
                 </div>
             </div>
 
-            <div class="dropdown">
-                <a href="#healthcare">Healthcare ▾</a>
 
-                <div class="dropdown-menu">
-                    <a href="#healthcare">Healthcare Provider</a>
-                    <a href="#healthcare">Revenue Cycle Management</a>
-                    <a href="#healthcare">Healthcare Payer</a>
-                    <a href="#healthcare">Medical Coding Services</a>
-                    <a href="#healthcare">Claims Management</a>
-                    <a href="#healthcare">Member Management</a>
+            <!-- HEALTHCARE -->
+            <div class="dropdown healthcare-dropdown">
+
+                <a href="#healthcare" class="dropdown-toggle">
+                    Healthcare
+                </a>
+
+                <div class="dropdown-menu healthcare-menu">
+
+                    <!-- Healthcare Provider -->
+                    <div class="sub-dropdown">
+
+                        <a href="#healthcare-provider">
+                            Healthcare Provider
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <div class="sub-dropdown-menu">
+
+                            <a href="#revenue-cycle">
+                                Revenue Cycle Management
+                            </a>
+
+                            <a href="#coding-him">
+                                Coding / Health Information Management (HIM)
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Healthcare Payer -->
+                    <div class="sub-dropdown">
+
+                        <a href="#healthcare-payer">
+                            Healthcare Payer
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <div class="sub-dropdown-menu">
+
+                            <a href="#medical-coding">
+                                Medical Coding Services
+                            </a>
+
+                            <a href="#claims-management">
+                                Claims Management
+                            </a>
+
+                            <a href="#member-management">
+                                Member Management
+                            </a>
+
+                            <a href="#provider-network">
+                                Provider Network Data Management
+                            </a>
+
+                            <a href="#value-added">
+                                Value Added Services
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
-            <a href="#contact">Contact Us</a>
+
+            <a href="#contact">
+                Contact Us
+            </a>
+
+            <a href="#" class="employee-login">
+                Employee Login
+            </a>
 
         </nav>
 
-    </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            ☰
+        </button>
 
+    </div>
 </header>
 
 
 <!-- ================= HERO ================= -->
+<section class="hero-section" id="home">
 
-<section class="hero" id="home">
+    <div class="hero-slide">
 
-    <div class="hero-shape"></div>
+        <div class="hero-background-shapes">
 
-    <div class="hero-circle circle-one"></div>
-    <div class="hero-circle circle-two"></div>
+            <img
+                src="https://mtx-eng.com/assets/img/hero/hero_overlay_1.png"
+                class="hero-overlay"
+                alt=""
+            >
 
-    <div class="container hero-content">
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_1.png"
+                class="hero-bubble bubble-1"
+                alt=""
+            >
 
-        <div class="hero-text">
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_2.png"
+                class="hero-bubble bubble-2"
+                alt=""
+            >
 
-            <p class="hero-label">
-                MYZAS TECHNOLOGIES PRIVATE LIMITED
-            </p>
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_3.png"
+                class="hero-bubble bubble-3"
+                alt=""
+            >
 
-            <h1>
-                Software
-                <span>Development</span>
-            </h1>
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_4.png"
+                class="hero-bubble bubble-4"
+                alt=""
+            >
 
-            <p>
-                We work towards bringing the best talents and minds
-                together to become a complete business solutions
-                technology partner for businesses looking to improve
-                their technology capabilities and expand their market.
-            </p>
+            <img
+                src="https://mtx-eng.com/assets/img/hero/circle_big.png"
+                class="hero-circle-big"
+                alt=""
+            >
 
-            <a href="#services" class="hero-btn">
-                Read More
-            </a>
+            <img
+                src="https://mtx-eng.com/assets/img/hero/circle_middle.png"
+                class="hero-circle-middle"
+                alt=""
+            >
 
         </div>
 
-        <div class="hero-image">
 
-            <img src="https://mtx-eng.com/assets/img/software-h.jpg"
-                 alt="Software Development">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="hero-company">
+                    Myzas Technologies Private Limited
+                </p>
+
+                <h1>
+                    Software Development
+                </h1>
+
+                <p>
+                    We works towards the best talents and minds in
+                    different fields for the purpose of becoming a
+                    complete business solutions technology partner
+                    for the businesses seeking to improve their image
+                    or expand their market share.
+                </p>
+
+                <a href="#software-development" class="hero-btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SECOND HERO -->
+    <div class="hero-slide hero-slide-two">
+
+        <div class="hero-background-shapes">
+
+            <img
+                src="https://mtx-eng.com/assets/img/hero/hero_overlay_1.png"
+                class="hero-overlay"
+                alt=""
+            >
+
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_1.png"
+                class="hero-bubble bubble-1"
+                alt=""
+            >
+
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_2.png"
+                class="hero-bubble bubble-2"
+                alt=""
+            >
+
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_3.png"
+                class="hero-bubble bubble-3"
+                alt=""
+            >
+
+            <img
+                src="https://mtx-eng.com/assets/img/hero/bubble_4.png"
+                class="hero-bubble bubble-4"
+                alt=""
+            >
+
+        </div>
+
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="hero-company">
+                    Myzas Technologies Private Limited
+                </p>
+
+                <h1>
+                    Clinical SAS
+                </h1>
+
+                <p>
+                    SAS Clinical / Clinical SAS is the application of
+                    SAS technology to clinical domain for clinical trial
+                    data analysis in pharmaceutical, biotech and
+                    clinical research companies. Familiarity with
+                    clinical trial aspects combined with knowledge of SAS.
+                </p>
+
+                <a href="#clinical-sas" class="hero-btn">
+                    Read More
+                </a>
+
+            </div>
 
         </div>
 
@@ -129,27 +340,31 @@
 
 
 <!-- ================= ABOUT ================= -->
-
 <section class="about-section" id="about">
 
-    <div class="container about-grid">
+    <div class="container about-container">
 
         <div class="about-images">
 
-            <img class="about-img-one"
-                 src="https://mtx-eng.com/assets/img/abt-h1.jpg"
-                 alt="About Myzas Technologies">
+            <img
+                src="https://mtx-eng.com/assets/img/abt-h1.jpg"
+                alt="About Myzas Technologies"
+                class="about-image about-image-one"
+            >
 
-            <img class="about-img-two"
-                 src="https://mtx-eng.com/assets/img/abt-h2.jpg"
-                 alt="Technology Solutions">
+            <img
+                src="https://mtx-eng.com/assets/img/abt-h2.jpg"
+                alt="Myzas Technologies"
+                class="about-image about-image-two"
+            >
 
         </div>
 
+
         <div class="about-content">
 
-            <p class="section-label">
-                ABOUT COMPANY
+            <p class="section-small-title">
+                About company
             </p>
 
             <h2>
@@ -157,43 +372,31 @@
             </h2>
 
             <p>
-                Myzas Technologies is a technology company specializing
-                in software products and IT services. We provide
-                customized technology solutions designed to deliver
-                business value to our clients.
+                Myzas Technologies is a global company specializing
+                in software product and technology. Myzas Technologies
+                offers customized software product and IT services.
+                We provide "cutting-edge" solutions that deliver
+                competitive advantage to our valued clients.
             </p>
 
             <p>
-                Our approach combines domain knowledge, disciplined
-                management practices and technology expertise to help
-                organizations improve their technology capabilities.
+                Our disciplined management techniques, domain knowledge
+                and holistic approach constantly develop ways to enhance
+                value to our clients.
             </p>
 
-            <div class="about-features">
 
-                <div>
-                    <span>✓</span>
-                    <strong>100% Best Company</strong>
-                </div>
+            <div class="about-points">
 
-                <div>
-                    <span>✓</span>
-                    <strong>Our Vision</strong>
-                </div>
-
-                <div>
-                    <span>✓</span>
-                    <strong>Our Mission</strong>
-                </div>
-
-                <div>
-                    <span>✓</span>
-                    <strong>Best Team</strong>
-                </div>
+                <span>100% Best Company</span>
+                <span>Our Vision</span>
+                <span>Our Mission</span>
+                <span>Best Team</span>
 
             </div>
 
-            <a href="#contact" class="blue-btn">
+
+            <a href="#about" class="read-more">
                 Read More
             </a>
 
@@ -205,16 +408,19 @@
 
 
 <!-- ================= SERVICES ================= -->
-
 <section class="services-section" id="services">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <p>MYZAS TECHNOLOGIES</p>
+            <p>
+                Myzas Technologies
+            </p>
 
-            <h2>Our Services</h2>
+            <h2>
+                Our Services
+            </h2>
 
         </div>
 
@@ -222,142 +428,190 @@
         <div class="services-grid">
 
 
-            <div class="service-card">
+            <!-- SOFTWARE DEVELOPMENT -->
+            <article class="service-card" id="software-development">
 
-                <img src="https://mtx-eng.com/assets/img/software-h.jpg"
-                     alt="Software Development">
+                <div class="service-image">
+                    <img
+                        src="https://mtx-eng.com/assets/img/software-h.jpg"
+                        alt="Software Development"
+                    >
+                </div>
 
                 <div class="service-content">
 
-                    <h3>Software Development</h3>
+                    <h3>
+                        Software Development
+                    </h3>
 
                     <p>
-                        Complete software development solutions
-                        designed around business requirements.
+                        We works towards the best talents and minds
+                        in different fields for the purpose of becoming
+                        a complete business.
                     </p>
 
-                    <a href="#contact">
-                        See More →
+                    <a href="#software-development">
+                        See More
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="service-card">
+            <!-- SOFTWARE TESTING -->
+            <article class="service-card" id="software-testing">
 
-                <img src="https://mtx-eng.com/assets/img/testing-h.jpg"
-                     alt="Software Testing">
+                <div class="service-image">
+                    <img
+                        src="https://mtx-eng.com/assets/img/testing-h.jpg"
+                        alt="Software Testing"
+                    >
+                </div>
 
                 <div class="service-content">
 
-                    <h3>Software Testing</h3>
+                    <h3>
+                        Software Testing
+                    </h3>
 
                     <p>
-                        Quality-focused software testing solutions
-                        to improve application reliability.
+                        Companies today face many constraints and
+                        challenges to market their products because
+                        of their tight budgets.
                     </p>
 
-                    <a href="#contact">
-                        See More →
+                    <a href="#software-testing">
+                        See More
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="service-card">
+            <!-- IT STAFF AUGMENT -->
+            <article class="service-card" id="staff-augment">
 
-                <img src="https://mtx-eng.com/assets/img/staff-h.jpg"
-                     alt="IT Staff Augment">
+                <div class="service-image">
+                    <img
+                        src="https://mtx-eng.com/assets/img/staff-h.jpg"
+                        alt="IT Staff Augment"
+                    >
+                </div>
 
                 <div class="service-content">
 
-                    <h3>IT Staff Augment</h3>
+                    <h3>
+                        IT Staff Augment
+                    </h3>
 
                     <p>
-                        Skilled IT professionals to support your
-                        technology and development teams.
+                        Since IT industry is ever changing, the demand
+                        for high-performance IT professionals are always
+                        on the rise.
                     </p>
 
-                    <a href="#contact">
-                        See More →
+                    <a href="#staff-augment">
+                        See More
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="service-card">
+            <!-- CLOUD COMPUTING -->
+            <article class="service-card" id="cloud-computing">
 
-                <img src="https://mtx-eng.com/assets/img/cloud-h.jpg"
-                     alt="Cloud Computing">
+                <div class="service-image">
+                    <img
+                        src="https://mtx-eng.com/assets/img/cloud-h.jpg"
+                        alt="Cloud Computing"
+                    >
+                </div>
 
                 <div class="service-content">
 
-                    <h3>Cloud Computing</h3>
+                    <h3>
+                        Cloud Computing
+                    </h3>
 
                     <p>
-                        Secure, scalable and cost-effective cloud
-                        computing solutions.
+                        Designed to be simple, elastic, secure, and
+                        cost-effective for both businesses and developers,
+                        Cloud Soft Sol Services.
                     </p>
 
-                    <a href="#contact">
-                        See More →
+                    <a href="#cloud-computing">
+                        See More
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="service-card">
+            <!-- QUALITY ASSURANCE -->
+            <article class="service-card" id="quality-assurance">
 
-                <img src="https://mtx-eng.com/assets/img/quality-h.jpg"
-                     alt="Quality Assurance">
+                <div class="service-image">
+                    <img
+                        src="https://mtx-eng.com/assets/img/quality-h.jpg"
+                        alt="Quality Assurance"
+                    >
+                </div>
 
                 <div class="service-content">
 
-                    <h3>Quality Assurance</h3>
+                    <h3>
+                        Quality Assurance
+                    </h3>
 
                     <p>
-                        Systematic testing and quality assurance
-                        services for modern applications.
+                        Myzas Technologies has the skills, processes,
+                        tools and techniques required for systematic
+                        testing, and offers.
                     </p>
 
-                    <a href="#contact">
-                        See More →
+                    <a href="#quality-assurance">
+                        See More
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="service-card">
+            <!-- MOBILE APPLICATION -->
+            <article class="service-card" id="mobile-application">
 
-                <img src="https://mtx-eng.com/assets/img/mobile-h.jpg"
-                     alt="Mobile Application">
+                <div class="service-image">
+                    <img
+                        src="https://mtx-eng.com/assets/img/mobile-h.jpg"
+                        alt="Mobile Application"
+                    >
+                </div>
 
                 <div class="service-content">
 
-                    <h3>Mobile Application</h3>
+                    <h3>
+                        Mobile Application
+                    </h3>
 
                     <p>
-                        Customized mobile application development
-                        for modern businesses.
+                        We, at Myzas Technologies create applications
+                        that leverage the benefits of the wire-free-world
+                        into lives and businesses.
                     </p>
 
-                    <a href="#contact">
-                        See More →
+                    <a href="#mobile-application">
+                        See More
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
         </div>
 
@@ -366,30 +620,76 @@
 </section>
 
 
-<!-- ================= STATS ================= -->
-
+<!-- ================= STATISTICS ================= -->
 <section class="stats-section">
 
-    <div class="container stats-grid">
+    <div class="container stats-container">
 
-        <div class="stat">
-            <strong>150+</strong>
-            <span>Project Completed</span>
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                ★
+            </div>
+
+            <h2>
+                150+
+            </h2>
+
+            <p>
+                Project Completed
+            </p>
+
         </div>
 
-        <div class="stat">
-            <strong>50+</strong>
-            <span>Expert Team</span>
+
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                ★
+            </div>
+
+            <h2>
+                50+
+            </h2>
+
+            <p>
+                Expert Team
+            </p>
+
         </div>
 
-        <div class="stat">
-            <strong>90+</strong>
-            <span>Satisfied Customer</span>
+
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                ★
+            </div>
+
+            <h2>
+                90+
+            </h2>
+
+            <p>
+                Satisfied Customer
+            </p>
+
         </div>
 
-        <div class="stat">
-            <strong>20+</strong>
-            <span>Awards</span>
+
+        <div class="stat-item">
+
+            <div class="stat-icon">
+                ★
+            </div>
+
+            <h2>
+                20+
+            </h2>
+
+            <p>
+                Awards
+            </p>
+
         </div>
 
     </div>
@@ -398,16 +698,19 @@
 
 
 <!-- ================= TECHNOLOGIES ================= -->
-
-<section class="technology-section" id="technologies">
+<section class="technologies-section" id="technologies">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <p>MYZAS TECHNOLOGIES</p>
+            <p>
+                MYZAS TECHNOLOGIES
+            </p>
 
-            <h2>Our Technologies</h2>
+            <h2>
+                Our Technologies
+            </h2>
 
         </div>
 
@@ -415,79 +718,166 @@
         <div class="technology-grid">
 
 
-            <div class="technology-card">
+            <!-- CLINICAL SAS -->
+            <a
+                href="#clinical-sas"
+                class="technology-card"
+                id="clinical-sas"
+            >
 
-                <img src="https://mtx-eng.com/assets/img/sas-h.jpg"
-                     alt="Clinical SAS">
+                <img
+                    src="https://mtx-eng.com/assets/img/sas-h.jpg"
+                    alt="Clinical SAS"
+                >
 
-                <div>
-                    <h3>Clinical SAS</h3>
-                    <span>Our Technologies</span>
+                <div class="technology-overlay">
+
+                    <h3>
+                        Clinical SAS
+                    </h3>
+
+                    <p>
+                        Our Technologies
+                    </p>
+
                 </div>
 
-            </div>
+            </a>
 
 
-            <div class="technology-card">
+            <!-- SALESFORCE -->
+            <a
+                href="#salesforce"
+                class="technology-card"
+                id="salesforce"
+            >
 
-                <img src="https://mtx-eng.com/assets/img/salesforce-h.jpg"
-                     alt="Salesforce">
+                <img
+                    src="https://mtx-eng.com/assets/img/salesforce-h.jpg"
+                    alt="Salesforce"
+                >
 
-                <div>
-                    <h3>Salesforce</h3>
-                    <span>Our Technologies</span>
+                <div class="technology-overlay">
+
+                    <h3>
+                        Salesforce
+                    </h3>
+
+                    <p>
+                        Our Technologies
+                    </p>
+
                 </div>
 
-            </div>
+            </a>
 
 
-            <div class="technology-card">
+            <!-- DEVOPS -->
+            <a
+                href="#devops"
+                class="technology-card"
+                id="devops"
+            >
 
-                <img src="https://mtx-eng.com/assets/img/devops-h.jpg"
-                     alt="DevOps">
+                <img
+                    src="https://mtx-eng.com/assets/img/devops-h.jpg"
+                    alt="Devops"
+                >
 
-                <div>
-                    <h3>DevOps</h3>
-                    <span>Our Technologies</span>
+                <div class="technology-overlay">
+
+                    <h3>
+                        Devops
+                    </h3>
+
+                    <p>
+                        Our Technologies
+                    </p>
+
                 </div>
 
-            </div>
+            </a>
 
 
-            <div class="technology-card">
+            <!-- CYBER SECURITY -->
+            <a
+                href="#cyber-security"
+                class="technology-card"
+                id="cyber-security"
+            >
 
-                <img src="https://mtx-eng.com/assets/img/cyber-h.jpg"
-                     alt="Cyber Security">
+                <img
+                    src="https://mtx-eng.com/assets/img/cyber-h.jpg"
+                    alt="Cyber Security"
+                >
 
-                <div>
-                    <h3>Cyber Security</h3>
-                    <span>Our Technologies</span>
+                <div class="technology-overlay">
+
+                    <h3>
+                        Cyber Security
+                    </h3>
+
+                    <p>
+                        Our Technologies
+                    </p>
+
                 </div>
 
-            </div>
+            </a>
 
 
-            <div class="technology-card">
+            <!-- SAP -->
+            <a
+                href="#sap"
+                class="technology-card"
+                id="sap"
+            >
 
-                <img src="https://mtx-eng.com/assets/img/sap-h.jpg"
-                     alt="SAP">
+                <img
+                    src="https://mtx-eng.com/assets/img/sap-h.jpg"
+                    alt="SAP"
+                >
 
-                <div>
-                    <h3>SAP</h3>
-                    <span>Our Technologies</span>
+                <div class="technology-overlay">
+
+                    <h3>
+                        SAP
+                    </h3>
+
+                    <p>
+                        Our Technologies
+                    </p>
+
                 </div>
 
-            </div>
+            </a>
 
 
-            <div class="technology-card">
+            <!-- REACTJS -->
+            <a
+                href="#reactjs"
+                class="technology-card"
+                id="reactjs"
+            >
 
-                <div class="technology-placeholder">
-                    <h3>ReactJS</h3>
-                    <span>Our Technologies</span>
+                <img
+                    src="https://mtx-eng.com/assets/img/devops-h.jpg"
+                    alt="ReactJS"
+                >
+
+                <div class="technology-overlay">
+
+                    <h3>
+                        ReactJS
+                    </h3>
+
+                    <p>
+                        Our Technologies
+                    </p>
+
                 </div>
 
-            </div>
+            </a>
 
         </div>
 
@@ -497,62 +887,76 @@
 
 
 <!-- ================= HEALTHCARE ================= -->
-
 <section class="healthcare-section" id="healthcare">
 
-    <div class="container healthcare-grid">
+    <div class="container">
 
-        <div>
+        <div class="section-heading">
 
-            <p class="section-label">
-                HEALTHCARE
+            <p>
+                MYZAS TECHNOLOGIES
             </p>
 
             <h2>
-                Healthcare Technology Solutions
+                Healthcare
             </h2>
-
-            <p>
-                Myzas Technologies provides technology and healthcare
-                solutions designed to support healthcare providers and
-                healthcare payers.
-            </p>
-
-            <div class="healthcare-links">
-
-                <a href="#contact">
-                    Revenue Cycle Management
-                </a>
-
-                <a href="#contact">
-                    Coding / Health Information Management
-                </a>
-
-                <a href="#contact">
-                    Medical Coding Services
-                </a>
-
-                <a href="#contact">
-                    Claims Management
-                </a>
-
-                <a href="#contact">
-                    Member Management
-                </a>
-
-                <a href="#contact">
-                    Provider Network Data Management
-                </a>
-
-            </div>
 
         </div>
 
 
-        <div class="healthcare-image">
+        <div class="healthcare-content">
 
-            <img src="https://mtx-eng.com/assets/img/abt-h2.jpg"
-                 alt="Healthcare Technology">
+
+            <div
+                class="healthcare-box"
+                id="healthcare-provider"
+            >
+
+                <h3>
+                    Healthcare Provider
+                </h3>
+
+                <a href="#revenue-cycle">
+                    Revenue Cycle Management
+                </a>
+
+                <a href="#coding-him">
+                    Coding / Health Information Management (HIM)
+                </a>
+
+            </div>
+
+
+            <div
+                class="healthcare-box"
+                id="healthcare-payer"
+            >
+
+                <h3>
+                    Healthcare Payer
+                </h3>
+
+                <a href="#medical-coding">
+                    Medical Coding Services
+                </a>
+
+                <a href="#claims-management">
+                    Claims Management
+                </a>
+
+                <a href="#member-management">
+                    Member Management
+                </a>
+
+                <a href="#provider-network">
+                    Provider Network Data Management
+                </a>
+
+                <a href="#value-added">
+                    Value Added Services
+                </a>
+
+            </div>
 
         </div>
 
@@ -562,72 +966,95 @@
 
 
 <!-- ================= TESTIMONIALS ================= -->
-
-<section class="testimonial-section">
+<section class="testimonials-section">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <p>TESTIMONIALS</p>
+            <p>
+                Testimonials
+            </p>
 
-            <h2>A Customer's Remarkable Experience</h2>
-
-        </div>
-
-
-        <div class="testimonial-image">
-
-            <img src="https://mtx-eng.com/assets/img/testi.jpg"
-                 alt="Customer Satisfaction">
+            <h2>
+                A Customer's Remarkable Experience
+            </h2>
 
         </div>
 
 
-        <div class="testimonial-grid">
+        <div class="testimonial-container">
 
+            <div class="testimonial-image">
 
-            <div class="testimonial">
-
-                <p>
-                    "We have worked with Myzas Technologies on various
-                    projects and found that they provide quality service
-                    and expertise for our programming needs."
-                </p>
-
-                <h3>Sagar</h3>
-
-                <span>CEO</span>
+                <img
+                    src="https://mtx-eng.com/assets/img/testi.jpg"
+                    alt="Customer testimonial"
+                >
 
             </div>
 
 
-            <div class="testimonial">
-
-                <p>
-                    "Under tight deadlines and with high expectations,
-                    Myzas Technologies was a pleasure to partner with
-                    on a high profile software development project."
-                </p>
-
-                <h3>Kranthi</h3>
-
-                <span>Project Manager</span>
-
-            </div>
+            <div class="testimonial-content">
 
 
-            <div class="testimonial">
+                <div class="testimonial-item">
 
-                <p>
-                    "Myzas Technologies has been a professional and
-                    committed partner while supporting our mobile
-                    application testing requirements."
-                </p>
+                    <p>
+                        We have worked with Myzas Technologies on
+                        various projects, and find that they provide
+                        quality service and expertise for our
+                        programming needs.
+                    </p>
 
-                <h3>Supraja</h3>
+                    <h3>
+                        Sagar
+                    </h3>
 
-                <span>HR Manager</span>
+                    <span>
+                        CEO
+                    </span>
+
+                </div>
+
+
+                <div class="testimonial-item">
+
+                    <p>
+                        Under tight deadlines and with high expectations,
+                        Myzas Technologies was a pleasure to partner with,
+                        on a high profile Software Development website.
+                    </p>
+
+                    <h3>
+                        Kranthi
+                    </h3>
+
+                    <span>
+                        Project Manager
+                    </span>
+
+                </div>
+
+
+                <div class="testimonial-item">
+
+                    <p>
+                        We have been using Myzas Technologies' service
+                        for the last four months for testing of our
+                        Mobile app testing. They have been a professional
+                        and committed partner.
+                    </p>
+
+                    <h3>
+                        Supraja
+                    </h3>
+
+                    <span>
+                        HR Manager
+                    </span>
+
+                </div>
 
             </div>
 
@@ -639,25 +1066,19 @@
 
 
 <!-- ================= CONTACT ================= -->
-
 <section class="contact-section" id="contact">
 
-    <div class="container contact-grid">
+    <div class="container">
 
-        <div class="contact-content">
+        <div class="section-heading">
 
-            <p class="section-label">
-                GET IN TOUCH
+            <p>
+                Contact Us
             </p>
 
             <h2>
-                Contact Myzas Technologies
+                Get In Touch
             </h2>
-
-            <p>
-                Get in touch with our team to discuss your technology
-                requirements and business needs.
-            </p>
 
         </div>
 
@@ -666,59 +1087,41 @@
 
             <div class="contact-item">
 
-                <div class="contact-icon">
-                    ☎
-                </div>
+                <h3>
+                    Phone
+                </h3>
 
-                <div>
-
-                    <strong>Phone</strong>
-
-                    <a href="tel:+918008166150">
-                        +91 8008166150
-                    </a>
-
-                </div>
+                <a href="tel:+918008166150">
+                    +91 8008166150
+                </a>
 
             </div>
 
 
             <div class="contact-item">
 
-                <div class="contact-icon">
-                    ✉
-                </div>
+                <h3>
+                    Email
+                </h3>
 
-                <div>
-
-                    <strong>Email</strong>
-
-                    <a href="mailto:hr@myzastechnologies.com">
-                        hr@myzastechnologies.com
-                    </a>
-
-                </div>
+                <a href="mailto:hr@myzastechnologies.com">
+                    hr@myzastechnologies.com
+                </a>
 
             </div>
 
 
             <div class="contact-item">
 
-                <div class="contact-icon">
-                    📍
-                </div>
+                <h3>
+                    Address
+                </h3>
 
-                <div>
-
-                    <strong>Address</strong>
-
-                    <p>
-                        Second Floor, B-69, B-Block,<br>
-                        Sector 6, Noida,<br>
-                        Uttar Pradesh 201309
-                    </p>
-
-                </div>
+                <p>
+                    Second Floor, B-69, B-Block,<br>
+                    Sector 6, Noida,<br>
+                    Uttar Pradesh 201309
+                </p>
 
             </div>
 
@@ -730,66 +1133,110 @@
 
 
 <!-- ================= FOOTER ================= -->
+<footer class="site-footer">
 
-<footer>
-
-    <div class="container footer-grid">
+    <div class="container footer-container">
 
 
-        <div class="footer-company">
+        <div class="footer-column">
 
-            <img src="logo.png"
-                 alt="Myzas Technologies"
-                 class="footer-logo">
+            <h3>
+                Myzas Technologies
+            </h3>
 
             <p>
-                Myzas Technologies Private Limited specializes in
-                software products, technology and customized IT
-                services.
+                Myzas Technologies is a global company specializing
+                in software product and technology. Myzas Technologies
+                offers customized software product and IT services.
             </p>
 
         </div>
 
 
-        <div>
+        <div class="footer-column">
 
-            <h3>Our Services</h3>
+            <h3>
+                Our Services
+            </h3>
 
-            <a href="#services">Software Development</a>
-            <a href="#services">Software Testing</a>
-            <a href="#services">IT Staff Augment</a>
-            <a href="#services">Cloud Computing</a>
-            <a href="#services">Quality Assurance</a>
-            <a href="#services">Mobile Application</a>
+            <a href="#software-development">
+                Software Development
+            </a>
+
+            <a href="#software-testing">
+                Software Testing
+            </a>
+
+            <a href="#staff-augment">
+                IT Staff Augment
+            </a>
+
+            <a href="#cloud-computing">
+                Cloud Computing
+            </a>
+
+            <a href="#quality-assurance">
+                Quality Assurance
+            </a>
+
+            <a href="#mobile-application">
+                Mobile Application
+            </a>
 
         </div>
 
 
-        <div>
+        <div class="footer-column">
 
-            <h3>Our Technologies</h3>
+            <h3>
+                Our Technologies
+            </h3>
 
-            <a href="#technologies">Clinical SAS</a>
-            <a href="#technologies">Salesforce</a>
-            <a href="#technologies">DevOps</a>
-            <a href="#technologies">Cyber Security</a>
-            <a href="#technologies">SAP</a>
-            <a href="#technologies">ReactJS</a>
+            <a href="#clinical-sas">
+                Clinical SAS
+            </a>
+
+            <a href="#salesforce">
+                Salesforce
+            </a>
+
+            <a href="#devops">
+                Devops
+            </a>
+
+            <a href="#cyber-security">
+                Cyber Security
+            </a>
+
+            <a href="#sap">
+                SAP
+            </a>
+
+            <a href="#reactjs">
+                ReactJS
+            </a>
 
         </div>
 
 
-        <div>
+        <!-- CONTACT - ONLY THESE VALUES ARE CHANGED -->
+        <div class="footer-column">
 
-            <h3>Get In Touch</h3>
-
-            <p>+91 8008166150</p>
-
-            <p>hr@myzastechnologies.com</p>
+            <h3>
+                Get In Touch
+            </h3>
 
             <p>
-                Second Floor, B-69, B-Block,<br>
-                Sector 6, Noida,<br>
+                +91 8008166150
+            </p>
+
+            <p>
+                hr@myzastechnologies.com
+            </p>
+
+            <p>
+                Second Floor, B-69, B-Block,
+                Sector 6, Noida,
                 Uttar Pradesh 201309
             </p>
 
@@ -798,10 +1245,12 @@
     </div>
 
 
-    <div class="copyright">
+    <div class="footer-bottom">
 
-        Copyright 2026 Myzas Technologies Private Limited.
-        All Rights Reserved.
+        <p>
+            Copyright 2024 Myzas Technologies Private Limited.
+            All Rights Reserved.
+        </p>
 
     </div>
 
